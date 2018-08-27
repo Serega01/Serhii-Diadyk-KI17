@@ -1,0 +1,120 @@
+object Form1: TForm1
+  Left = 644
+  Height = 339
+  Top = 237
+  Width = 613
+  Caption = 'Розробник: Дядик С.М.'
+  ClientHeight = 339
+  ClientWidth = 613
+  Color = 11927037
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object Button1: TButton
+    Left = 280
+    Height = 25
+    Top = 40
+    Width = 144
+    Caption = 'Дата'
+    Font.Height = -13
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 280
+    Height = 25
+    Top = 88
+    Width = 144
+    Caption = 'Випадкове число'
+    Font.Height = -13
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 120
+    Top = 219
+    Width = 616
+    Caption = 'Правило користування додатком:'#13#10'1. Вводимо слово;'#13#10'2. Натискаємо будь-яку кнопку.'#13#10#13#10'P.S.'#13#10'-Якщо натиснути кнопку "Дата" виведеться поточний місяць і рік;'#13#10'-Якщо натиснути кнопку "Випадкове число" виведеться число від 0,01 до 0,99 або від 5,00 до 10,00;'#13#10'-Якщо натиснути кнопку "Перевірити" введене слово перевіриться на наявність у статті 48 Конституції України. '
+    Color = clDefault
+    ParentColor = False
+    Transparent = False
+    OnClick = Label1Click
+    OnResize = Label1Resize
+  end
+  object Memo1: TMemo
+    Cursor = crDrag
+    Left = 8
+    Height = 121
+    Top = 40
+    Width = 248
+    BorderStyle = bsNone
+    Font.Height = 30
+    OnChange = Memo1Change
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 280
+    Height = 25
+    Top = 136
+    Width = 144
+    Caption = 'Перевірка'
+    Font.Height = -13
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Left = 356
+    Height = 20
+    Top = 0
+    Width = 257
+    Caption = 'Створив: Дядик Сергій Миколайович'
+    Color = clWhite
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    OnClick = Label2Click
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 24
+    Width = 146
+    Caption = 'ВВОДИТИ СЛОВО НИЖЧЕ'
+    Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    OnClick = Label3Click
+    OnDragDrop = Label3DragDrop
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 20
+    Top = 168
+    Width = 73
+    Caption = 'Результат: '
+    Color = clDefault
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label5: TLabel
+    Left = 80
+    Height = 1
+    Top = 168
+    Width = 1
+    Color = clDefault
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    OnClick = Label5Click
+  end
+end
